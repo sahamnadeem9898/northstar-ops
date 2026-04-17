@@ -3,6 +3,22 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#16213E]">
+      {/* Promotional Banner */}
+      <div className="bg-gradient-to-r from-[#E94560] via-[#d63850] to-[#E94560] py-3 px-6 text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
+        <div className="relative flex items-center justify-center gap-3 text-white">
+          <svg className="w-5 h-5 flex-shrink-0 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+          </svg>
+          <p className="text-sm md:text-base font-semibold">
+            🚀 Now Accepting New Clients for Q2 2026 | Limited Spots Available |
+            <a href="#contact" className="ml-2 underline hover:text-gray-100 transition-colors font-bold">
+              Book Your Strategy Call →
+            </a>
+          </p>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#1A1A2E] via-[#0F3460] to-[#16213E] px-6 py-24 sm:py-32 lg:px-8">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
